@@ -1,7 +1,7 @@
 export interface IBookHistory {
 bookId: string;
 takenAt: Date;
-returnedAt?: Date; // опционально (если не возвращена)
+returnedAt?: Date;
 }
 export interface IReader {
 id: string;
@@ -10,5 +10,5 @@ email: string;
 phone: string;
 registrationDate: Date;
 booksHistory: IBookHistory[];
-activeBooks: string[]; // ID книг на руках
+activeBooks: string[];
 }

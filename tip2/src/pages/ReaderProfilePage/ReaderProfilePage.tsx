@@ -1,4 +1,5 @@
-import Layout from '../../components/common/Layout/Layout.tsx/index.ts';
+// import Layout from '../../components/common/Layout/Layout.tsx/index.ts';
+import Layout from '../../components/common/Layout/Layout.tsx';
 import ReaderProfile from '../../components/readers/ReaderProfile/ReaderProfile.tsx';
 import { mockReaders } from '../../mocks/readers';
 import '../../styles/profile.css';
