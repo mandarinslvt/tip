@@ -11,10 +11,16 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+<<<<<<< Updated upstream
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
+=======
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.18.1"
+>>>>>>> Stashed changes
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
