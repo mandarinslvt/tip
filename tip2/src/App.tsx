@@ -8,29 +8,16 @@ import type { IBook } from './types/books';
 import './App.css'; 
 
 function App() {
-  const [activePage, setActivePage] = useState<'books' | 'readers'>('books');
-
-  //проверка
-  const mockBooks: IBook[] = [
-    { id: '1', title: 'Преступление и наказание', author: 'Ф. Достоевский' },
-];
-
   return (
     <div className="app">
-      {/* Подключаем вашу шапку */}
-      <Header activePage={activePage} onPageChange={setActivePage} />
-      
-      <main className="container" style={{ paddingTop: '20px' }}>
-        {activePage === 'books' ? (
-          <BookList books={mockBooks} />
-        ) : (
-          <div className="readers-page">
-            <h2>Список читателей</h2>
-            
-          </div>
-        )}
+      <Header />
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<BookList books={mockBooks} />} />
+          <Route path="/books/:id" element={<BookDetail />} />
+          {/* Добавьте роуты для читателей и профиля */}
+        </Routes>
       </main>
     </div>
   );
 }
-export default App;
